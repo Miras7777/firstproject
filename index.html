@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт на Nicepage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <p>logo</p>
+    </header>
+    <section class="section1">
+        <!-- <img src="1.jpg" alt="Описание изображения" class="centered-image"> -->
+         <div class="blok">
+         <div class="divv"> 121 Rock Street, 21 Avenue, New York, NY 92103-9000</div>
+         <div class="divv">ПН-ПТ...8:00-19:00</div>
+         <div class="divv">miras@gmail.com</div>
+        </div>
+        <div class="suret">
+            <div class="domalak">
+        <img src="domalak.jpg">
+            </div>
+            <div class="blok2">
+        <h1>Привет</h1>
+        <h2>Немного обо мне</h2>
+        <h3>Я креативный директор из Нью-Йорка, который любит чистый, простой и уникальный дизайн. мне тоже нравится мастерить</h3>
+        <button id="openModal" onclick="modalOpen()">Открыть модальное окно</button>
+            </div>
+        </div>
+    </section>
+    <header class="miras">
+        <h4>Привет</h4>   
+     </header>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h3>Регистрация</h3>
+        <div class="modal-main">
+        <form action="api/register.php" method="POST">
+            <input type="text" name="email" placeholder="Почта или телефон">
+            <input type="text" name="full_name" placeholder="Полное имя">
+            <input type="text" name="nickname" placeholder="Nickname">
+            <input type="password" name="password" placeholder="Введите пароль">
+            <input type="password" name="password2" placeholder="Подтвердить пароль">
+            <button type="submit">Sign In</button>
+            <p>Dont have an account?</p>
+            <a href="">Sign Up</a>
+        </form>
+        </div>
+        <button id="closeButton" onclick="modalClose()">Закрыть</button>
+    </div>
+</div>
+
+     <script src="index.js"></script>
+</body>
+</html>
